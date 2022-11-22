@@ -24,3 +24,5 @@ class UserDaoMongoDb extends ContenedorMongoDB {
     }
   }
 }
+
+export { UserDaoMongoDb }

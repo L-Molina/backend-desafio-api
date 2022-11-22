@@ -13,7 +13,6 @@ class ContenedorFirebase {
   constructor(nombreCollection) {
     this.query = db.collection(nombreCollection);
   }
-
 	//listar todos
 	async listarTodos() {
 		try {

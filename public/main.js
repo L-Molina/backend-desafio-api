@@ -1,3 +1,6 @@
+//inicializamos socket
+const socket = io.connect();
+
 //renderCounter
 const renderCounter = () => {
   const counter = document.getElementById("counter");
@@ -86,3 +89,6 @@ searchTab.addEventListener("keyup", (e) => {
     })
     .catch(err => console.log(err));
 }); 
+
+socket.on('productos', function() { renderProducts(); });
+socket.on('messages', function(data) { renderMessages(data); });
